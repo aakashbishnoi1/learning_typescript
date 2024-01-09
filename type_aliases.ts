@@ -26,3 +26,19 @@ function returnPerson(): Person {
     return person;
 }
 returnPerson();
+
+// optional properties
+type Student = {
+    name: string,
+    class: number,
+    age: number,
+    father_name? : string 
+}
+
+const my_student: Student = {
+    name: "Kapil",
+    class: 10,
+    age: 16,
+}
+
+console.log(`name: ${my_student.name}, age: ${my_student.age}, class: ${my_student.class}`);
