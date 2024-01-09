@@ -15,3 +15,4 @@ function returnObject(): {name: string, age: number, location: string} {
 }
 
 console.log(returnObject());
+
