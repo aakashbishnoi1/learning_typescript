@@ -29,7 +29,8 @@ returnPerson();
 
 // optional properties
 type Student = {
-    name: string,
+    // Read only properties
+    readonly name: string,
     class: number,
     age: number,
     father_name? : string 
@@ -41,4 +42,10 @@ const my_student: Student = {
     age: 16,
 }
 
+// You can not change the value of the readonly property once it's constructed
+// Error 
+// my_student.name = "Aakash";
+
 console.log(`name: ${my_student.name}, age: ${my_student.age}, class: ${my_student.class}`);
+
+
